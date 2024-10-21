@@ -1,0 +1,727 @@
+* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+
+
+
+
+
+
+
+
+
+
+    /* Style pour le menu latéral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.sidebar-menu li {
+    margin: 20px 0;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+
+.sidebar-register-btn {
+    display: block;
+    background-color: #48032d;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+/* Style du bouton de fermeture */
+.close-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Lorsque le menu latéral est actif */
+.sidebar.active {
+    left: 0;
+}
+
+/* Pour les écrans plus grands (cacher le menu hamburger) */
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    
+    nav {
+        display: flex;
+    }
+}
+
+
+}
+
+
+
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+.profil, .commentaire {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(252, 251, 251);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100%;
+}
+
+body {
+    margin-top: 100px;
+
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #1a1b1d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1f0114;
+    font-size: 16px;
+}
+
+
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+
+.logo-image {
+    width: 100%; /* S'adapte à la largeur maximale du conteneur */
+    max-width: 50px; /* Taille maximale de l'image, à ajuster selon ton besoin */
+    height: auto; /* Garder les proportions */
+    margin-right: 10px; /* Ajouter de l'espace entre l'image et le texte */
+}
+
+
+.logo a {
+    text-decoration: none; /* Supprime le soulignement sous les logos */
+}
+
+
+
+/* Bouton Register Now - Style de base */
+.register-btn {
+    padding: 12px 30px; /* Augmente la taille du bouton */
+    background-color: #ffffff; /* Couleur de fond plus sombre */
+    color: rgb(75, 2, 64); /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+    border-radius: 50px; /* Arrondit les bords */
+    font-size: 18px; /* Taille du texte */
+    font-weight: bold; /* Met en gras le texte */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Ajoute une transition */
+}
+
+/* Effet au survol (hover) */
+.register-btn:hover {
+    background-color: #9b0293; /* Change la couleur lors du survol */
+    transform: scale(1.05); /* Augmente légèrement la taille au survol */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au survol */
+}
+
+/* Styles pour petits écrans */
+@media (max-width: 768px) {
+    .register-btn {
+        padding: 10px 20px; /* Réduit la taille du bouton sur les écrans plus petits */
+        font-size: 16px; /* Réduit la taille du texte */
+    }
+}
+
+@media (max-width: 480px) {
+    .register-btn {
+        width: 100%; /* Le bouton occupe toute la largeur sur les petits écrans */
+        text-align: center; /* Centre le texte */
+        padding: 15px 0; /* Ajoute plus d'espace vertical pour faciliter le clic sur mobile */
+    }
+}
+
+
+
+
+
+.logo-container {
+    display: flex;
+    justify-content: left; /* Ou center si tu veux centrer */
+    align-items: center;
+    max-width: 100%; /* Empêche le débordement du conteneur */
+    overflow: hidden; /* Cache tout ce qui dépasse le conteneur */
+    padding: 5px;
+    background-color: #dfdfdf;
+}
+
+
+.logo-container img {
+    width: 30px; 
+    height: auto;
+    margin: 0 20px;
+}
+
+
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.newsletter {
+    display: flex;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    background-color: #5c0558;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 600px;
+    border-radius: 20px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Boost Agencies */
+.boost-agencies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.boost-image img {
+    width: 800px;
+    height: auto;
+}
+
+.boost-text {
+    max-width: 500px;
+}
+
+.boost-text h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.boost-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.benefits-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.benefits-list li::before {
+    content: '✔';
+    color: #6a008a;
+    position: absolute;
+    left: 0;
+}
+
+.learn-more {
+    font-size: 16px;
+    color: #6a008a;
+    text-decoration: none;
+}
+
+/* Section Trust Companies */
+.trust-companies {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.trust-companies h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.trust-companies p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.explore-details {
+    font-size: 16px;
+    color: #6a008a;
+    text-decoration: none;
+}
+
+/* Section Video */
+.video-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.video-wrapper img {
+    width: 100%;
+    max-width: 1020px;
+    height: auto;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-button img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Style de base */
+.testimonials-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #3f3d56;
+    margin-bottom: 10px;
+}
+
+.comment-container {
+    margin: 0 auto;
+    width: 60%;
+    position: relative;
+}
+
+.comment-quote {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 30px;
+    display: none; /* Tous les commentaires sont cachés par défaut */
+}
+
+.comment-quote.active {
+    display: block; /* Le commentaire actif s'affiche */
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.profile-name {
+    font-size: 1.1em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile-role {
+    font-size: 0.9em;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+/* Section Support Clients */
+.customer-support {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.support-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.support-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.support-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    font-size: 16px;
+    color: #6a008a;
+    text-decoration: none;
+}
+
+.support-image {
+    flex: 1;
+    text-align: right;
+}
+
+.support-image img {
+    width: 700px;
+    height: auto;
+}
+
+
+
+
+
+
+.features-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.section-title {
+    color: #6a008a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+
+
+
+.tutorials-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section-title {
+    color: #6a008a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.tutorials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tutorial-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.tutorial-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tutorial-card h3 {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.comments {
+    color: #666;
+    font-size: 14px;
+}
+
+.cta-section {
+    background-color: #6a008a;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.cta-section p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ffffff;
+    color: #6a008a;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+} 
